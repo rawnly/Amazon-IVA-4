@@ -5,12 +5,13 @@ var pruned = toNumber($('#priceblock_ourprice').html());
 var conIVA = parse(incorpora(scorpora(pruned, 22), 4));
 
 // EXECUTION
-$.each($('.a-row .a-color-price'), function(i, val) {
+$.each($('.a-row .a-color-price .p13n-sc-price'), function(i, val) {
   var number = val.innerHTML.split('&nbsp;')[0];
   var prunedNumber = toNumber(number);
-  var ivato = parse(incorpora(scorpora(prunedNumber, 22)).toFixed(2));
+  var ivato = incorpora(scorpora(prunedNumber, 22)).toFixed(2);
   val.innerHTML = "EUR " + prunedNumber + " | " + ivato;
 })
+
 $('#priceblock_ourprice').html("EUR " + pruned + " | " + conIVA)
 
 
