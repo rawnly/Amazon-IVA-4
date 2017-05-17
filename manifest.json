@@ -1,0 +1,24 @@
+{
+  "name": "Amazon IVA to 4%",
+  "version": "1.0",
+  "description": "Chrome Extension for change amazon prices to price with iva at 4% (from 22%)",
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["jquery.min.js", "content2.js"]
+  }],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Title Changer"
+  },
+  "permissions": [
+    "tabs",
+    "notifications",
+    "http://*/",
+    "https://*/",
+    "activeTab"
+  ],
+  "manifest_version": 2
+}
