@@ -9,10 +9,10 @@ $.each($('.a-row .a-color-price .p13n-sc-price'), function(i, val) {
   var number = val.innerHTML.split('&nbsp;')[0];
   var prunedNumber = toNumber(number);
   var ivato = incorpora(scorpora(prunedNumber, 22)).toFixed(2);
-  val.innerHTML = "EUR " + prunedNumber + " | " + ivato;
+  val.innerHTML = "EUR " + prunedNumber + " - EUR " + ivato;
 })
 
-$('#priceblock_ourprice').html("EUR " + pruned + " | " + conIVA)
+$('#priceblock_ourprice').html("EUR " + pruned + " - EUR " + conIVA)
 
 
 // VARIOUS UTILITIES FUNCTIONS
