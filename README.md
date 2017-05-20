@@ -6,7 +6,7 @@ that can discount their iva from 22 to 4%.
 ![screenshot](img.png)
 
 ## Installation
-Download `[soon download link]` from the Chrome Web Store or you can also install it manually by cloning **this repo** and load as [unpacked extension](http://lmgtfy.com/?iie=0&q=How+to+load+unpacked+extension+chrome).
+Download [download link][download] from the Chrome Web Store or you can also install it manually by cloning **this repo** and load as [unpacked extension](http://lmgtfy.com/?iie=0&q=How+to+load+unpacked+extension+chrome).
 
 ## Usage
 ![zoom](zoom.png)
@@ -26,3 +26,6 @@ And this happens for **most of the products** in the page. (Not with shipments)
 <br>
 
 Made with :heart: by [Federico Vitale](https://rawnly.com)
+
+
+[download]: https://chrome.google.com/webstore/detail/amazon-iva-to-4%25/hdfaobnhangpkhkamgneflkgipdpfoom?hl=it
