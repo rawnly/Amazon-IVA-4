@@ -1,8 +1,21 @@
 // MADE WITH LOVE BY @RAWNLY (rawnly.com) <fedevitale99@gmail.com>
 
 // VARS
+
+
+if ($('#priceblock_ourprice')) {
+  
 var pruned = toNumber($('#priceblock_ourprice').html());
 var conIVA = parse(incorpora(scorpora(pruned, 22), 4));
+$('#priceblock_ourprice').html("EUR " + pruned + " - EUR " + conIVA)
+  
+} else if ($('#priceblock_saleprice').html() != undefined && $('#priceblock_saleprice').html() != '') {
+
+var sale_price = toNumber($('#priceblock_saleprice').html());
+var sale_price4 = parse(incorpora(scorpora(sale_price, 22),4));
+$('#priceblock_saleprice').html('EUR ' + sale_price + ' - EUR ' + sale_price4);
+  
+}
 
 // EXECUTION
 $.each($('.a-row .a-color-price .p13n-sc-price'), function(i, val) {
@@ -11,8 +24,6 @@ $.each($('.a-row .a-color-price .p13n-sc-price'), function(i, val) {
   var ivato = incorpora(scorpora(prunedNumber, 22)).toFixed(2);
   val.innerHTML = "EUR " + prunedNumber + " - EUR " + ivato;
 })
-
-$('#priceblock_ourprice').html("EUR " + pruned + " - EUR " + conIVA)
 
 
 // VARIOUS UTILITIES FUNCTIONS
